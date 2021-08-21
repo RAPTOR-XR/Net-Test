@@ -1,0 +1,343 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-08-16 06:40+0600\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: .\network\process.py:13
+msgid "What's on your mind?"
+msgstr "তুমি কি ভাবছ?"
+
+#: .\network\process.py:13
+msgid "post content"
+msgstr "পোস্ট সামগ্রী"
+
+#: .\network\process.py:19
+msgid "Your comment..."
+msgstr "তোমার মন্তব্য..."
+
+#: .\network\process.py:19
+msgid "comment content"
+msgstr "মন্তব্য বিষয়বস্তু"
+
+#: .\network\process.py:25
+msgid "Date of birth: "
+msgstr "জন্ম তারিখ: "
+
+#: .\network\process.py:30
+#, python-brace-format, fuzzy
+#| msgid "Image file exceeds %(max)s MB size limit"
+msgid "Image file exceeds {settings.MAX} MB size limit"
+msgstr "ইমেজ ফাইল অতিক্রম করেছে %(max) এমবি আকার সীমা"
+
+#: .\network\process.py:35
+msgid "Name: "
+msgstr "নাম: "
+
+#: .\network\process.py:35
+msgid "Country: "
+msgstr "দেশ: "
+
+#: .\network\process.py:35
+msgid "Image: "
+msgstr "ছবি: "
+
+#: .\network\process.py:35
+msgid "About: "
+msgstr "সম্পর্কিত: "
+
+#: .\network\process.py:36
+msgid "Your name"
+msgstr "তোমার নাম"
+
+#: .\network\process.py:36
+msgid "your name"
+msgstr "তোমার নাম"
+
+#: .\network\process.py:38
+msgid "Describe yourself..."
+msgstr "তোমার সম্পকে বর্ণনা কর..."
+
+#: .\network\process.py:38
+msgid "describe yourself"
+msgstr "তোমার সম্পকে বর্ণনা কর"
+
+#: .\network\templates\network\comments.html:16
+#: .\network\templates\network\posts.html:70
+msgid "Show more"
+msgstr "আরো দেখুন"
+
+#: .\network\templates\network\comments.html:26
+#: .\network\templates\network\posts.html:20
+msgid "Edit"
+msgstr "সম্পাদনা করুন"
+
+#: .\network\templates\network\comments.html:27
+#: .\network\templates\network\comments.html:45
+#: .\network\templates\network\posts.html:21
+#: .\network\templates\network\posts.html:39
+msgid "Delete"
+msgstr "মুছুন"
+
+#: .\network\templates\network\comments.html:35
+#: .\network\templates\network\posts.html:29
+msgid "Are you sure?"
+msgstr "তুমি কি নিশ্চিত?"
+
+#: .\network\templates\network\comments.html:41
+msgid ""
+"Are you sure you want to delete this comment? This procedure can not be "
+"reversed!"
+msgstr "আপনি কি নিশ্চিত যে আপনি এই মন্তব্যটি মুছে ফেলতে চান? এই পদ্ধতিটি উল্টানো যাবে না!"
+
+#: .\network\templates\network\comments.html:44
+#: .\network\templates\network\comments.html:62
+#: .\network\templates\network\posts.html:38
+#: .\network\templates\network\posts.html:57
+msgid "Close"
+msgstr "বন্ধ করো"
+
+#: .\network\templates\network\comments.html:54
+#: .\network\templates\network\posts.html:49
+msgid "What's more you want to add?"
+msgstr "আপনি আরো কি যোগ করতে চান?"
+
+#: .\network\templates\network\comments.html:63
+#: .\network\templates\network\posts.html:58
+msgid "Save"
+msgstr "সংরক্ষণ"
+
+#: .\network\templates\network\comments.html:70
+#: .\network\templates\network\posts.html:65
+msgid "ago"
+msgstr "আগে"
+
+#: .\network\templates\network\comments.html:95
+#: .\network\templates\network\posts.html:97
+msgid "React"
+msgstr "প্রতিক্রিয়া"
+
+#: .\network\templates\network\edit.html:22
+#, python-format, fuzzy
+msgid " Image file exceeds %(max)s MB size limit "
+msgstr "ইমেজ ফাইল %(max) MB সাইজের সীমা অতিক্রম করেছে"
+
+#: .\network\templates\network\edit.html:25
+msgid "It seems this is not an image."
+msgstr "মনে হচ্ছে এটি একটি ছবি নয়।"
+
+#: .\network\templates\network\edit.html:59
+msgid "Cancel"
+msgstr "বাতিল করুন"
+
+#: .\network\templates\network\edit.html:60
+msgid "Submit"
+msgstr "জমা দিন"
+
+#: .\network\templates\network\index.html:13
+msgid "Post"
+msgstr "পোস্ট"
+
+#: .\network\templates\network\index.html:21
+#: .\network\templates\network\profile.html:130
+msgid "No posts here."
+msgstr "এখানে কোন পোস্ট নেই।"
+
+#: .\network\templates\network\layout.html:30
+msgid "All Posts"
+msgstr "সব পোস্ট"
+
+#: .\network\templates\network\layout.html:34
+msgid "Following"
+msgstr "সমর্থককুল"
+
+#: .\network\templates\network\layout.html:37
+msgid "Log Out"
+msgstr "লগ আউট করুন"
+
+#: .\network\templates\network\layout.html:41
+msgid "Log In"
+msgstr "প্রবেশ করুন"
+
+#: .\network\templates\network\layout.html:44
+#: .\network\templates\network\register.html:7
+#: .\network\templates\network\register.html:27
+msgid "Register"
+msgstr "নিবন্ধন করুন"
+
+#: .\network\templates\network\login.html:7
+#: .\network\templates\network\login.html:24
+msgid "Login"
+msgstr "প্রবেশ করুন"
+
+#: .\network\templates\network\login.html:16
+#: .\network\templates\network\register.html:16
+msgid "Username"
+msgstr "ব্যবহারকারীর নাম"
+
+#: .\network\templates\network\login.html:19
+#: .\network\templates\network\register.html:22
+msgid "Password"
+msgstr "পাসওয়ার্ড"
+
+#: .\network\templates\network\login.html:27
+msgid "Don't have an account?"
+msgstr "তোমার কি কোন অ্যাকাউন্ট নেই?"
+
+#: .\network\templates\network\login.html:27
+msgid "Register here."
+msgstr "এখানে নিবন্ধন করুন"
+
+#: .\network\templates\network\paginator.html:7
+#: .\network\templates\network\paginator.html:14
+msgid "First"
+msgstr "প্রথম"
+
+#: .\network\templates\network\paginator.html:10
+#: .\network\templates\network\paginator.html:17
+msgid "Previous"
+msgstr "পূর্ববর্তী"
+
+#: .\network\templates\network\paginator.html:22
+#: .\network\templates\network\paginator.html:29
+msgid "Next"
+msgstr "পরবর্তী"
+
+#: .\network\templates\network\paginator.html:25
+#: .\network\templates\network\paginator.html:32
+msgid "Last"
+msgstr "শেষ"
+
+#: .\network\templates\network\paginator.html:37
+msgid "Page"
+msgstr "পৃষ্ঠা"
+
+#: .\network\templates\network\paginator.html:37
+msgid "of"
+msgstr "এর"
+
+#: .\network\templates\network\posts.html:35
+msgid ""
+"Are you sure you want to delete this post? This procedure can not be "
+"reversed!"
+msgstr "আপনি কি নিশ্চিত যে আপনি এই পোস্টটি মুছে ফেলতে চান? এই পদ্ধতিটি অপরিবর্তনীয়!"
+
+#: .\network\templates\network\posts.html:65
+msgid "Posted: "
+msgstr "পোস্ট করা হয়েছে: "
+
+#: .\network\templates\network\posts.html:92
+msgid "Comments: "
+msgstr "মন্তব্য: "
+
+#: .\network\templates\network\posts.html:108
+msgid "Comments"
+msgstr "মন্তব্য"
+
+#: .\network\templates\network\profile.html:27
+msgid "Unfollow"
+msgstr "অনুসরণ করা বন্ধ করুন"
+
+#: .\network\templates\network\profile.html:34
+msgid "Follow"
+msgstr "অনুসরণ করুন"
+
+#: .\network\templates\network\profile.html:44
+msgid "Edit profile"
+msgstr "জীবন বৃত্তান্ত সম্পাদনা"
+
+#: .\network\templates\network\profile.html:69
+msgid "BIO"
+msgstr "জীবনী"
+
+#: .\network\templates\network\profile.html:75
+msgid "Name:"
+msgstr "নাম:"
+
+#: .\network\templates\network\profile.html:88
+msgid "Birth:"
+msgstr "জন্ম:"
+
+#: .\network\templates\network\profile.html:102
+msgid "About:"
+msgstr "সম্পর্কিত:"
+
+#: .\network\templates\network\profile.html:115
+msgid "Country:"
+msgstr "দেশ:"
+
+#: .\network\templates\network\register.html:19
+msgid "Email Address"
+msgstr "ইমেল ঠিকানা"
+
+#: .\network\templates\network\register.html:25
+msgid "Confirm Password"
+msgstr "পাসওয়ার্ড নিশ্চিত করুন"
+
+#: .\network\templates\network\register.html:30
+msgid "Already have an account?"
+msgstr "ইতিমধ্যে একটি সদস্যপদ আছে?"
+
+#: .\network\templates\network\register.html:30
+msgid "Log In here."
+msgstr "এখানে লগইন করুন."
+
+#: .\network\views.py:40
+msgid "Invalid username and/or password."
+msgstr "ভুল ব্যবহারিক নাম / বা চাবিবন্ধ."
+
+#: .\network\views.py:61
+msgid "Passwords must match."
+msgstr "পাসওয়ার্ড মিলে যাওয়া উচিত।"
+
+#: .\network\views.py:65
+msgid "You must fill out all fields."
+msgstr "আপনাকে অবশ্যই সমস্ত ক্ষেত্র পূরণ করতে হবে।"
+
+#: .\network\views.py:74
+msgid "Username already taken."
+msgstr "ব্যবহারকারীর নাম ইতিমধ্যেই নেওয়া."
+
+#: .\network\views.py:111 .\network\views.py:123
+msgid "Post or Comment may have deleted or removed"
+msgstr "পোস্ট বা মন্তব্য মুছে ফেলা হতে পারে"
+
+#: .\network\views.py:171
+msgid ""
+"Action not justified. You can not react anything except post or comment!"
+msgstr "অ্যাকশন ন্যায্য নয়। আপনি পোস্ট বা মন্তব্য ছাড়া কিছু প্রতিক্রিয়া করতে পারবেন না।"
+
+#: .\network\views.py:175
+msgid "Post or comment may have deleted or removed"
+msgstr "পোস্ট বা মন্তব্য মুছে ফেলা হতে পারে"
+
+#: .\network\views.py:178
+msgid "Something went wrong"
+msgstr "কিছু ভুল হয়েছে"
+
+#: .\network\views.py:190
+msgid "Action not justified. You can not react anything except post or comment"
+msgstr "অ্যাকশন ন্যায্য নয়। আপনি পোস্ট বা মন্তব্য ছাড়া কিছু প্রতিক্রিয়া করতে পারবেন না।"
+
+#: .\network\views.py:192 .\network\views.py:208
+msgid "Post or comment may have deleted"
+msgstr "পোস্ট বা মন্তব্য মুছে ফেলা হতে পারে"
+
+#: .\network\views.py:206
+msgid ""
+"Action not justified. You can not react anything except post or comment."
+msgstr "অ্যাকশন ন্যায্য নয়। আপনি পোস্ট বা মন্তব্য ছাড়া কিছু প্রতিক্রিয়া করতে পারবেন না।"

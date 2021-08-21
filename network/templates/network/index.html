@@ -1,0 +1,35 @@
+{% extends "network/layout.html" %}
+{% load static %}
+{% load i18n %}
+
+{% block body %}
+    {% if user.is_authenticated and availability %}
+    <div class="post-form-cont">
+        <form action="{% url 'ppost' act='post' %}" method="post">
+            {% csrf_token %}
+            <div class="form-group">
+                {{ post_form.content }}
+            </div>
+            <input class="btn btn-primary" type="submit" value='{% trans "Post" %}'>
+        </form>
+    </div>
+    {% endif %}
+    {% for post in page_obj.object_list %}
+        {% include "network/posts.html" %}
+    {% empty %}
+        <div class="empty-post">
+            {% trans "No posts here." %}
+        </div>
+    {% endfor %}
+    {% include "network/paginator.html" %}
+{% endblock %}
+{% block script %}
+    <script src="{% static 'network/uppost_func.js' %}"></script>
+    <script src="{% static 'network/post_func.js' %}"></script>
+    <script src="{% static 'network/comment_func.js' %}"></script>
+    {% if user.is_authenticated %}
+        <script src="{% static 'network/auth.js' %}"></script>
+    {% else %}
+        <script src="{% static 'network/not_auth.js' %}"></script>
+    {% endif %}
+{% endblock %}

@@ -131,3 +131,5 @@ FLATPICKR_SET = {'theme_name': 'dark',}
 MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 LOCALE_PATHS = (os.path.join(BASE_DIR, 'locale'),)
+
+DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'

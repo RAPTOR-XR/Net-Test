@@ -163,28 +163,34 @@ def react(request, act, actId):
         try:
             if act == "post":
                 post = UpPost.objects.get(pk=actId)
-                react_obj = React.objects.get(user=request.user, post=post)
+                react_obj = React.objects.filter(user=request.user, post=post)
             elif act == "comment":
                 comment = Comment.objects.get(pk=actId)
-                react_obj = React.objects.get(user=request.user, comment=comment)
+                react_obj = React.objects.filter(user=request.user, comment=comment)
             else:
                 return JsonResponse({"error":_("Action not justified. You can not react anything except post or comment!")}, status=400)
-        except React.DoesNotExist:
-            return JsonResponse({"react":"False"}, status=200)
         except ( UpPost.DoesNotExist, Comment.DoesNotExist ):
             return JsonResponse({"error":_("Post or comment may have deleted or removed")}, status=404)
         else:
+            if len(react_obj) != 1:
+                return JsonResponse({})
+            react_obj = react_obj[0]
             return JsonResponse({"react":"True", "emoji": [emoji_tuple[1] for emoji_tuple in React.choices if emoji_tuple[0] == react_obj.react_type][0]}, status=200)
-        return JsonResponse({"error":_(f"Something went wrong")}, status=400)
     elif request.method == "POST":
         body = json.loads(request.body)
         react_type = [emoji_tuple[0] for emoji_tuple in React.choices if emoji_tuple[1] == body['emoji']][0]
         try:
             if act == "post":
                 post = UpPost.objects.get(pk=actId)
+                react = React.objects.filter(user=request.user, post=post)
+                if react:
+                    react.delete()
                 react_obj = React(user=request.user, post=post, react_type=react_type)
             elif act == "comment":
                 comment = Comment.objects.get(pk=actId)
+                react = React.objects.filter(user=request.user, comment=comment)
+                if react:
+                    react.delete()
                 react_obj = React(user=request.user, comment=comment, react_type=react_type)
             else:
                 return JsonResponse({"error":_("Action not justified. You can not react anything except post or comment")}, status=400)
